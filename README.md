@@ -89,11 +89,11 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 *(Thêm các hình ảnh, video mô tả hệ thống hoạt động thực tế)*
 
 - **Hình ảnh:**
-  - *(Thêm hình ảnh thiết bị và các thành phần kết nối)*
+  - 
 - **Video:**
-  - *(Thêm video minh họa thiết bị đang hoạt động)*
+  - *
 
 #### Kết quả đạt được
 
-- Hệ thống hoạt động ổn định, đ
+- 
 
