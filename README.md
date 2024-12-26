@@ -1,22 +1,34 @@
 # IoT Smart Pet Feeder
 
-### 🐾 Mô tả dự án
+## 🐾 Mô tả dự án
 
 Hệ thống **IoT Smart Pet Feeder** giúp bạn tự động hóa việc cho thú cưng ăn, đảm bảo chúng được chăm sóc đúng giờ và đầy đủ. Sử dụng công nghệ IoT, hệ thống cho phép bạn quản lý lịch trình cho ăn, theo dõi hoạt động qua ứng dụng và điều khiển từ xa thông qua MQTT.
 
 ---
 
-### 📚 Đặt vấn đề
+## 📚 Đặt vấn đề
 
 Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đặc biệt là khi bạn có lịch trình bận rộn. Bỏ lỡ bữa ăn hoặc cho ăn không đúng giờ có thể ảnh hưởng đến sức khỏe của chúng. **IoT Smart Pet Feeder** được phát triển để giải quyết vấn đề này bằng cách cung cấp một giải pháp tự động và dễ dàng quản lý qua Internet.
 
 ---
+## 🌟 Tính năng chính
 
-### 🔧 Sơ đồ hệ thống
+- **Tự động hóa:** Lên lịch và thực hiện việc cho ăn tự động theo giờ định sẵn.
+- **Điều khiển từ xa:** Quản lý qua ứng dụng Node-RED hoặc MQTT.
+- **Theo dõi:** Gửi thông báo và hiển thị trạng thái thiết bị, lượng thức ăn còn hay hết.
+- **Phát hiện chuyển động:** Xác định khi thú cưng đến gần thiết bị.
+- **Cảm biến hết thức ăn:** Gửi cảnh báo khi thức ăn trong thiết bị hết.
+- **Tùy chỉnh:** Điều chỉnh khẩu phần ăn phù hợp với từng loại thú cưng.
+
+---
+## 🔧 Sơ đồ hệ thống
 
 ![Hình 1](https://github.com/user-attachments/assets/7dcd48c7-1a83-4ef8-9ced-e5b2e1b9362a)
 
-- **Phần cứng:**
+![IoT Cuối kỳ drawio](https://github.com/user-attachments/assets/75d7d6ad-598a-42d2-a314-8813c8f87721)
+
+
+### **Phần cứng:**
   1. **ESP8266 NodeMCU**
      - **Chức năng:** Điều khiển toàn bộ hệ thống và giao tiếp với MQTT qua Wi-Fi.
      - **Ưu điểm:**
@@ -56,44 +68,32 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
        - Phổ biến, dễ tìm kiếm trên thị trường.
 ---
 
-### 🌟 Tính năng chính
-
-- **Tự động hóa:** Lên lịch và thực hiện việc cho ăn tự động theo giờ định sẵn.
-- **Điều khiển từ xa:** Quản lý qua ứng dụng Node-RED hoặc MQTT.
-- **Theo dõi:** Gửi thông báo và hiển thị trạng thái thiết bị, lượng thức ăn còn hay hết.
-- **Phát hiện chuyển động:** Xác định khi thú cưng đến gần thiết bị.
-- **Cảm biến hết thức ăn:** Gửi cảnh báo khi thức ăn trong thiết bị hết.
-- **Tùy chỉnh:** Điều chỉnh khẩu phần ăn phù hợp với từng loại thú cưng.
-
----
-
-### 📋 Cài đặt
-
-**Cài đặt phần mềm:**
-   - Cài đặt **PlatformIO** trên **VS Code**.
-
-**Cấu hình HiveMQ:**
+## 📋 Cài đặt
+### **Cấu hình HiveMQ:**
    - Đăng ký tài khoản trên HiveMQ và tạo MQTT broker.
    - Cập nhật các thông tin MQTT trong file cấu hình `config.h`.
 
-**Node-RED:**
-   - Cài đặt Node-RED trên máy tính hoặc server.
-   - Tạo flow kết nối với HiveMQ và hiển thị dữ liệu từ ESP8266.
+### **Cấu hình Node-RED:**
+   #### Node-red flow:
+![image](https://github.com/user-attachments/assets/f2054c4b-0220-42ec-a691-3539164e77ec)
+
+  #### Node-red dashboard:
+
+![image](https://github.com/user-attachments/assets/cc987c0b-f811-4ca5-b6e8-900c17cc34f0)
+
 
 ---
 
-### 🚀 Kết quả
+## 🚀 Kết quả
 
-#### Hình ảnh và video
-
-*(Thêm các hình ảnh, video mô tả hệ thống hoạt động thực tế)*
+### Hình ảnh và video
 
 - **Hình ảnh:**
-  - 
-- **Video:**
-  - *
 
-#### Kết quả đạt được
+- **Video:**
+
+
+### Kết quả đạt được
 
 - 
 
