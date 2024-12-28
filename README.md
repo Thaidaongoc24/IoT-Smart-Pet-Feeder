@@ -14,11 +14,12 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 ## 🌟 Tính năng chính
 
 - **Tự động hóa:** Lên lịch và thực hiện việc cho ăn tự động theo giờ định sẵn.
-- **Điều khiển từ xa:** Quản lý qua ứng dụng Node-RED hoặc MQTT.
+- **Điều khiển từ xa:** Quản lý qua Dashboard Node-RED **trên trực tiếp internet mà không phải localhost**.
 - **Theo dõi:** Gửi thông báo và hiển thị trạng thái thiết bị, lượng thức ăn còn hay hết.
 - **Phát hiện chuyển động:** Xác định khi thú cưng đến gần thiết bị.
 - **Cảm biến hết thức ăn:** Gửi cảnh báo khi thức ăn trong thiết bị hết.
 - **Tùy chỉnh:** Điều chỉnh khẩu phần ăn phù hợp với từng loại thú cưng.
+- **Thiết lập WIFI:** Cho phép thiết lập lại kết nối WIFI khi mất kết nối hoặc kết nối lần đầu từ giao diện người dùng mà không cần phải nạp lại code.
 
 ---
 ## 🔧 Sơ đồ hệ thống
@@ -81,8 +82,23 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 
 ![image](https://github.com/user-attachments/assets/cc987c0b-f811-4ca5-b6e8-900c17cc34f0)
 
+### **Cài đặt VPS của AWS để chạy Node-RED online:**
+- Có thể truy cập Node-RED qua internet tại địa chỉ: http://13.211.141.181/ (với username là: iothus ; password là: test) để cài đặt FLOW
+- Truy cập Dashboard tại địa chỉ; http://13.211.141.181/ui để điều khiển Pet Feeder
 
+Tải và lưu file khoá .pem.
 ---
+### **Thiết kế 3D vỏ sản phẩm và in 3D:**
+  #### Sử dụng phần mềm Fusion360 để thiết kế và chỉnh sửa 3D vỏ nhựa máy chia thức ăn.
+  <img src="https://github.com/user-attachments/assets/e2aadc0b-d4b1-48f4-824c-9c4572de8ecd" alt="Hình2" style="width:50%;"/>
+    
+(Mô hình 3D trên được tham khảo tại https://www.thingiverse.com/thing:4826741 và có chỉnh sửa lại cho phù hợp)
+  #### Sử dụng máy in 3D Adventurer 3 của Bộ môn Vật lý Vô tuyến tại phòng 216T1 để in sản phẩm:
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/4722b124-6102-4569-b5bb-fdd0734ac458" alt="in1" style="width:30%;"/>
+  <img src="https://github.com/user-attachments/assets/09b625db-04c1-4013-9cf3-0b999e962f60" alt="in2" style="width:40%;"/>
+</div>
+
 
 ## 🚀 Kết quả
 
