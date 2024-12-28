@@ -72,7 +72,6 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 ## 📋 Cài đặt
 ### **Cấu hình HiveMQ:**
    - Đăng ký tài khoản trên HiveMQ và tạo MQTT broker.
-   - Cập nhật các thông tin MQTT trong file cấu hình `config.h`.
 
 ### **Cấu hình Node-RED:**
    #### Node-red flow:
