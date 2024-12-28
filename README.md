@@ -84,8 +84,6 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 ### **Cài đặt VPS của AWS để chạy Node-RED online:**
 - Có thể truy cập Node-RED qua internet tại địa chỉ: http://13.211.141.181/ (với username là: iothus ; password là: test) để cài đặt FLOW
 - Truy cập Dashboard tại địa chỉ; http://13.211.141.181/ui để điều khiển Pet Feeder
-
-Tải và lưu file khoá .pem.
 ---
 ### **Thiết kế 3D vỏ sản phẩm và in 3D:**
   #### Sử dụng phần mềm Fusion360 để thiết kế và chỉnh sửa 3D vỏ nhựa máy chia thức ăn.
