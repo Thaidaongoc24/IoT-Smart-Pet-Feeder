@@ -1,22 +1,35 @@
 # IoT Smart Pet Feeder
 
-### 🐾 Mô tả dự án
+## 🐾 Mô tả dự án
 
 Hệ thống **IoT Smart Pet Feeder** giúp bạn tự động hóa việc cho thú cưng ăn, đảm bảo chúng được chăm sóc đúng giờ và đầy đủ. Sử dụng công nghệ IoT, hệ thống cho phép bạn quản lý lịch trình cho ăn, theo dõi hoạt động qua ứng dụng và điều khiển từ xa thông qua MQTT.
 
 ---
 
-### 📚 Đặt vấn đề
+## 📚 Đặt vấn đề
 
 Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đặc biệt là khi bạn có lịch trình bận rộn. Bỏ lỡ bữa ăn hoặc cho ăn không đúng giờ có thể ảnh hưởng đến sức khỏe của chúng. **IoT Smart Pet Feeder** được phát triển để giải quyết vấn đề này bằng cách cung cấp một giải pháp tự động và dễ dàng quản lý qua Internet.
 
 ---
+## 🌟 Tính năng chính
 
-### 🔧 Sơ đồ hệ thống
+- **Tự động hóa:** Lên lịch và thực hiện việc cho ăn tự động theo giờ định sẵn.
+- **Điều khiển từ xa:** Quản lý qua Dashboard Node-RED **trên trực tiếp internet mà không phải localhost**.
+- **Theo dõi:** Gửi thông báo và hiển thị trạng thái thiết bị, lượng thức ăn còn hay hết.
+- **Phát hiện chuyển động:** Xác định khi thú cưng đến gần thiết bị.
+- **Cảm biến hết thức ăn:** Gửi cảnh báo khi thức ăn trong thiết bị hết.
+- **Tùy chỉnh:** Điều chỉnh khẩu phần ăn phù hợp với từng loại thú cưng.
+- **Thiết lập WIFI:** Cho phép thiết lập lại kết nối WIFI khi mất kết nối hoặc kết nối lần đầu từ giao diện người dùng mà không cần phải nạp lại code.
+
+---
+## 🔧 Sơ đồ hệ thống
 
 ![Hình 1](https://github.com/user-attachments/assets/7dcd48c7-1a83-4ef8-9ced-e5b2e1b9362a)
 
-- **Phần cứng:**
+![IoT Cuối kỳ drawio](https://github.com/user-attachments/assets/75d7d6ad-598a-42d2-a314-8813c8f87721)
+
+
+### **Phần cứng:**
   1. **ESP8266 NodeMCU**
      - **Chức năng:** Điều khiển toàn bộ hệ thống và giao tiếp với MQTT qua Wi-Fi.
      - **Ưu điểm:**
@@ -56,44 +69,47 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
        - Phổ biến, dễ tìm kiếm trên thị trường.
 ---
 
-### 🌟 Tính năng chính
-
-- **Tự động hóa:** Lên lịch và thực hiện việc cho ăn tự động theo giờ định sẵn.
-- **Điều khiển từ xa:** Quản lý qua ứng dụng Node-RED hoặc MQTT.
-- **Theo dõi:** Gửi thông báo và hiển thị trạng thái thiết bị, lượng thức ăn còn hay hết.
-- **Phát hiện chuyển động:** Xác định khi thú cưng đến gần thiết bị.
-- **Cảm biến hết thức ăn:** Gửi cảnh báo khi thức ăn trong thiết bị hết.
-- **Tùy chỉnh:** Điều chỉnh khẩu phần ăn phù hợp với từng loại thú cưng.
-
----
-
-### 📋 Cài đặt
-
-**Cài đặt phần mềm:**
-   - Cài đặt **PlatformIO** trên **VS Code**.
-
-**Cấu hình HiveMQ:**
+## 📋 Cài đặt
+### **Cấu hình HiveMQ:**
    - Đăng ký tài khoản trên HiveMQ và tạo MQTT broker.
    - Cập nhật các thông tin MQTT trong file cấu hình `config.h`.
 
-**Node-RED:**
-   - Cài đặt Node-RED trên máy tính hoặc server.
-   - Tạo flow kết nối với HiveMQ và hiển thị dữ liệu từ ESP8266.
+### **Cấu hình Node-RED:**
+   #### Node-red flow:
+![image](https://github.com/user-attachments/assets/f2054c4b-0220-42ec-a691-3539164e77ec)
 
+  #### Node-red dashboard:
+
+![image](https://github.com/user-attachments/assets/cc987c0b-f811-4ca5-b6e8-900c17cc34f0)
+
+### **Cài đặt VPS của AWS để chạy Node-RED online:**
+- Có thể truy cập Node-RED qua internet tại địa chỉ: http://13.211.141.181/ (với username là: iothus ; password là: test) để cài đặt FLOW
+- Truy cập Dashboard tại địa chỉ; http://13.211.141.181/ui để điều khiển Pet Feeder
+
+Tải và lưu file khoá .pem.
 ---
+### **Thiết kế 3D vỏ sản phẩm và in 3D:**
+  #### Sử dụng phần mềm Fusion360 để thiết kế và chỉnh sửa 3D vỏ nhựa máy chia thức ăn.
+  <img src="https://github.com/user-attachments/assets/e2aadc0b-d4b1-48f4-824c-9c4572de8ecd" alt="Hình2" style="width:50%;"/>
+    
+(Mô hình 3D trên được tham khảo tại https://www.thingiverse.com/thing:4826741 và có chỉnh sửa lại cho phù hợp)
+  #### Sử dụng máy in 3D Adventurer 3 của Bộ môn Vật lý Vô tuyến tại phòng 216T1 để in sản phẩm:
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/4722b124-6102-4569-b5bb-fdd0734ac458" alt="in1" style="width:30%;"/>
+  <img src="https://github.com/user-attachments/assets/09b625db-04c1-4013-9cf3-0b999e962f60" alt="in2" style="width:40%;"/>
+</div>
 
-### 🚀 Kết quả
 
-#### Hình ảnh và video
+## 🚀 Kết quả
 
-*(Thêm các hình ảnh, video mô tả hệ thống hoạt động thực tế)*
+### Hình ảnh và video
 
 - **Hình ảnh:**
-  - *(Thêm hình ảnh thiết bị và các thành phần kết nối)*
+
 - **Video:**
-  - *(Thêm video minh họa thiết bị đang hoạt động)*
 
-#### Kết quả đạt được
 
-- Hệ thống hoạt động ổn định, đ
+### Kết quả đạt được
+
+- 
 
