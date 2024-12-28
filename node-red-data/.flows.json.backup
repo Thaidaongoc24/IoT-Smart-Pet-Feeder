@@ -1,0 +1,1313 @@
+[
+    {
+        "id": "e8cf5037a3361742",
+        "type": "tab",
+        "label": "Smart Pet Feeder",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "953e6549b4468a6e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ad3314cf0c96f880",
+        "type": "mqtt-broker",
+        "name": "hiveMQ",
+        "broker": "ef52bcb9a2654471a549247e267f5bff.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "b6b8bba966310ed3",
+        "clientid": "nodered",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b6b8bba966310ed3",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "isrgrootx1.pem",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "bbe550ae753765c0",
+        "type": "ui_group",
+        "name": "Hệ thống cho ăn",
+        "tab": "5a0967d80ba38782",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7fe34f74a6710aed",
+        "type": "ui_group",
+        "name": "Setup hẹn giờ cho ăn",
+        "tab": "5a0967d80ba38782",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5a0967d80ba38782",
+        "type": "ui_tab",
+        "name": "Smart Pet Feeder",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fee7de54379e78b3",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "isrgrootx1.pem",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "248b41bdf86a5da2",
+        "type": "ui_group",
+        "name": "Setup mức thức ăn",
+        "tab": "5a0967d80ba38782",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5417d67578c74339",
+        "type": "ui_text_input",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "label": "Nhập thời gian cho ăn 1 (HH:MM)",
+        "tooltip": "",
+        "group": "7fe34f74a6710aed",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "input",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "ca4c228bce7336dd"
+            ]
+        ]
+    },
+    {
+        "id": "aa9b82d36d07aa28",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "bbe550ae753765c0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Cho ăn",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "FEED",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "b3fb09642dcf4dda"
+            ]
+        ]
+    },
+    {
+        "id": "b3fb09642dcf4dda",
+        "type": "mqtt out",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "topic": "control",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ad3314cf0c96f880",
+        "x": 530,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "64f5787f2ac27f72",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "Đổi màu button",
+        "func": "const color = 'green'\nif (msg.payload === \"ON\"){\n    msg.auto = color;\n    msg.on = '';\n    msg.timer1 = color;\n    msg.timer2 = color;\n    msg.timer3 = color;\n} \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "ffe7ba198ecc706e",
+                "60d848a1578908cd",
+                "819ac579c0625bd0",
+                "c7278316890c20d6",
+                "2a250969faf24135"
+            ]
+        ]
+    },
+    {
+        "id": "56fbf075c6dfb7b5",
+        "type": "mqtt out",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "topic": "config",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ad3314cf0c96f880",
+        "x": 850,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f3063ad702f629d2",
+        "type": "ui_text_input",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "label": "Nhập thời gian cho ăn 2 (HH:MM)",
+        "tooltip": "",
+        "group": "7fe34f74a6710aed",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "input",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "846acd3fc4e4a53d"
+            ]
+        ]
+    },
+    {
+        "id": "86c1899b48bc174f",
+        "type": "ui_text_input",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "label": "Nhập thời gian cho ăn 3 (HH:MM)",
+        "tooltip": "",
+        "group": "7fe34f74a6710aed",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "input",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "a018b3b3dc1fbd73"
+            ]
+        ]
+    },
+    {
+        "id": "03f2148703eae3c8",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "7fe34f74a6710aed",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Lưu thời gian 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "send",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "msg",
+        "x": 540,
+        "y": 260,
+        "wires": [
+            [
+                "0a9ce4b7fd527b48",
+                "79c81885f7195d73",
+                "e00395bfbf1b7f19"
+            ]
+        ]
+    },
+    {
+        "id": "47d05fe040bc556b",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "7fe34f74a6710aed",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Lưu thời gian 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "send",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "msg",
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "b0a848da3690c2fc",
+                "796d9d827e0e30f6",
+                "e00395bfbf1b7f19"
+            ]
+        ]
+    },
+    {
+        "id": "009a71ad0d89fd87",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "7fe34f74a6710aed",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Lưu thời gian 3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "send",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "msg",
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "123b40cc70cb1bc0",
+                "bf52179607f5f6d1",
+                "e00395bfbf1b7f19"
+            ]
+        ]
+    },
+    {
+        "id": "ca4c228bce7336dd",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "lưu thời gian",
+        "func": "flow.set(\"userInput\", msg.payload);\nreturn null; // Không gửi gì tiếp tục từ đây\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "47d05fe040bc556b"
+            ]
+        ]
+    },
+    {
+        "id": "b0a848da3690c2fc",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "tính mes",
+        "func": "// Lấy dữ liệu đã lưu trong context\nconst userInput = flow.get(\"userInput\");\n\nif (!userInput) {\n    // Nếu chưa có dữ liệu input, thông báo lỗi\n    return { payload: \"Không có dữ liệu để gửi!\" };\n}\nconst timer =  userInput / 1000 % (24*3600);\nmsg.payload = '1 '+timer;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 220,
+        "wires": [
+            [
+                "56fbf075c6dfb7b5"
+            ]
+        ]
+    },
+    {
+        "id": "846acd3fc4e4a53d",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "lưu thời gian",
+        "func": "flow.set(\"userInput\", msg.payload);\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "03f2148703eae3c8"
+            ]
+        ]
+    },
+    {
+        "id": "a018b3b3dc1fbd73",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "lưu thời gian",
+        "func": "// Lưu giá trị input vào context flow\nflow.set(\"userInput\", msg.payload);\nreturn null; // Không gửi gì tiếp tục từ đây\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "009a71ad0d89fd87"
+            ]
+        ]
+    },
+    {
+        "id": "0a9ce4b7fd527b48",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "tính mes",
+        "func": "// Lấy dữ liệu đã lưu trong context\nconst userInput = flow.get(\"userInput\");\n\nif (!userInput) {\n    // Nếu chưa có dữ liệu input, thông báo lỗi\n    return { payload: \"Không có dữ liệu để gửi!\" };\n}\nconst timer =  userInput / 1000 % (24*3600);\nmsg.payload = '2 '+timer;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [
+                "56fbf075c6dfb7b5"
+            ]
+        ]
+    },
+    {
+        "id": "123b40cc70cb1bc0",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "tính mes",
+        "func": "// Lấy dữ liệu đã lưu trong context\nconst userInput = flow.get(\"userInput\");\n\nif (!userInput) {\n    // Nếu chưa có dữ liệu input, thông báo lỗi\n    return { payload: \"Không có dữ liệu để gửi!\" };\n}\nconst timer =  userInput / 1000 % (24*3600);\nmsg.payload = '3 '+timer;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 300,
+        "wires": [
+            [
+                "56fbf075c6dfb7b5"
+            ]
+        ]
+    },
+    {
+        "id": "60d848a1578908cd",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "7fe34f74a6710aed",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Tắt hẹn giờ 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.timer1}}",
+        "className": "",
+        "icon": "",
+        "payload": "1 off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 80,
+        "wires": [
+            [
+                "56fbf075c6dfb7b5",
+                "796d9d827e0e30f6"
+            ]
+        ]
+    },
+    {
+        "id": "c7278316890c20d6",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "7fe34f74a6710aed",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Tắt hẹn giờ 3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.timer3}}",
+        "className": "",
+        "icon": "",
+        "payload": "3 off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "56fbf075c6dfb7b5",
+                "bf52179607f5f6d1"
+            ]
+        ]
+    },
+    {
+        "id": "819ac579c0625bd0",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "7fe34f74a6710aed",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Tắt hẹn giờ 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.timer2}}",
+        "className": "",
+        "icon": "",
+        "payload": "2 off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "56fbf075c6dfb7b5",
+                "79c81885f7195d73"
+            ]
+        ]
+    },
+    {
+        "id": "53166e4181d7cd71",
+        "type": "ui_text",
+        "z": "e8cf5037a3361742",
+        "group": "bbe550ae753765c0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trạng thái thức ăn",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 370,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ffe7ba198ecc706e",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "bbe550ae753765c0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Tự động cho ăn",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.auto}}",
+        "className": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "b3fb09642dcf4dda",
+                "64f5787f2ac27f72"
+            ]
+        ]
+    },
+    {
+        "id": "796d9d827e0e30f6",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "đổi màu button",
+        "func": "const color = 'green';\nif (msg.payload === '1 off') {\n    msg.timer1 = color;\n} \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 80,
+        "wires": [
+            [
+                "60d848a1578908cd"
+            ]
+        ]
+    },
+    {
+        "id": "79c81885f7195d73",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "đổi màu button",
+        "func": "const color = 'green';\nif (msg.payload === '2 off') {\n    msg.timer2 = color;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 120,
+        "wires": [
+            [
+                "819ac579c0625bd0"
+            ]
+        ]
+    },
+    {
+        "id": "bf52179607f5f6d1",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "đổi màu button",
+        "func": "const color = 'green';\nif (msg.payload === '3 off') {\n    msg.timer3 = color;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "c7278316890c20d6"
+            ]
+        ]
+    },
+    {
+        "id": "e00395bfbf1b7f19",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "Đổi màu button",
+        "func": "if (msg.payload === \"send\"){\n    msg.auto = '';\n    msg.on = '';\n    msg.off = '';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 520,
+        "wires": [
+            [
+                "ffe7ba198ecc706e"
+            ]
+        ]
+    },
+    {
+        "id": "4c223e83eb915b1d",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "function 1",
+        "func": "const payloadStr = String(msg.payload).trim();\nif (payloadStr[0] === '1') {\n    msg.payload = \"Còn thức ăn\";\n} else {\n    msg.payload = \"Hết thức ăn\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "53166e4181d7cd71"
+            ]
+        ]
+    },
+    {
+        "id": "bdd12760542ae9e1",
+        "type": "mqtt in",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "topic": "food",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "ad3314cf0c96f880",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 180,
+        "wires": [
+            [
+                "4c223e83eb915b1d",
+                "df2ebb453e60c7b9"
+            ]
+        ]
+    },
+    {
+        "id": "d1ad0c8a1b2fe67f",
+        "type": "ui_text",
+        "z": "e8cf5037a3361742",
+        "group": "bbe550ae753765c0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Thông báo",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 350,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "142d09867c19aa65",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "function 2",
+        "func": "const payloadStr = String(msg.payload).trim();\nif (payloadStr[0] === '2') {\n    msg.payload = \"Phát hiện thú cưng, có lẽ thú cưng bạn đang đói, có nên cho ăn không?\";\n} else if (payloadStr[0] === '1') {\n    msg.payload = \"Phát hiện thú cưng\";\n} else {\n    msg.payload = \"Không phát hiện thú cưng\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 40,
+        "wires": [
+            [
+                "d1ad0c8a1b2fe67f"
+            ]
+        ]
+    },
+    {
+        "id": "74abc679593c68d9",
+        "type": "mqtt in",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "topic": "noti",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "ad3314cf0c96f880",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 40,
+        "wires": [
+            [
+                "142d09867c19aa65",
+                "b450bec5fcbc92de"
+            ]
+        ]
+    },
+    {
+        "id": "60cbb71e3f970d80",
+        "type": "ui_chart",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "bbe550ae753765c0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Biểu đồ lượng thức ăn cho trong ngày",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 470,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa3f7fd9aa363c44",
+        "type": "mqtt in",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "topic": "chart",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "ad3314cf0c96f880",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 600,
+        "wires": [
+            [
+                "23f5e1e8e12bde16",
+                "21d008d0d0add094"
+            ]
+        ]
+    },
+    {
+        "id": "e9855c7fb942c9e0",
+        "type": "ui_chart",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "248b41bdf86a5da2",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Tổng lượng thức ăn cho trong ngày",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#85ff85",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 460,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21d008d0d0add094",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "function 3",
+        "func": "// Kiểm tra nếu payload bắt đầu bằng \"SUM\"\nif (msg.payload.startsWith(\"SUM\")) {\n    // Lấy phần số sau \"SUM\"\n    let number = msg.payload.slice(3); // Cắt bỏ \"SUM\" khỏi chuỗi\n    // Kiểm tra nếu phần còn lại là một số\n    if (!isNaN(number)) {\n        msg.payload = parseInt(number); // Chuyển đổi chuỗi thành số\n    } else {\n        return;\n    }\n} else {\n    return;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 560,
+        "wires": [
+            [
+                "e9855c7fb942c9e0",
+                "5ac94d0ae197e3f3"
+            ]
+        ]
+    },
+    {
+        "id": "23f5e1e8e12bde16",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "function 4",
+        "func": "// Kiểm tra nếu payload bắt đầu bằng \"SUM\"\nif (!msg.payload.startsWith(\"SUM\")) {\n    // Lấy phần số sau \"SUM\"\n    let number = msg.payload; // Cắt bỏ \"SUM\" khỏi chuỗi\n    // Kiểm tra nếu phần còn lại là một số\n    if (!isNaN(number)) {\n        msg.payload = parseInt(number); // Chuyển đổi chuỗi thành số\n    } else {\n        msg.payload = \"Không phải số hợp lệ\"; // Nếu phần còn lại không phải số\n    }\n} else {\n    return;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 600,
+        "wires": [
+            [
+                "60cbb71e3f970d80",
+                "4d8d82e215606113"
+            ]
+        ]
+    },
+    {
+        "id": "5ac94d0ae197e3f3",
+        "type": "debug",
+        "z": "e8cf5037a3361742",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 530,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "4d8d82e215606113",
+        "type": "debug",
+        "z": "e8cf5037a3361742",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 530,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5778b105c8e81965",
+        "type": "ui_text_input",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "label": "Nhập số lượng thức ăn (1-10)",
+        "tooltip": "",
+        "group": "248b41bdf86a5da2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "input",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "cdc643139b9dde21"
+            ]
+        ]
+    },
+    {
+        "id": "20a8e32b9c093afb",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "248b41bdf86a5da2",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Lưu số lượng thức ăn",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "send",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "msg",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "b6e86144192ccb4c",
+                "81776827aa09bf46"
+            ]
+        ]
+    },
+    {
+        "id": "cdc643139b9dde21",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "lưu số lượng thức ăn",
+        "func": "// Lưu giá trị input vào context flow\nflow.set(\"userInput\", msg.payload);\nreturn null; // Không gửi gì tiếp tục từ đây\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "20a8e32b9c093afb"
+            ]
+        ]
+    },
+    {
+        "id": "b6e86144192ccb4c",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "tính mes",
+        "func": "// Lấy dữ liệu đã lưu trong context\nconst userInput = flow.get(\"userInput\");\n\nif (!userInput) {\n    // Nếu chưa có dữ liệu input, thông báo lỗi\n    return { payload: \"Không có dữ liệu để gửi!\" };\n}\nconst timer =  userInput;\nmsg.payload = 'CA '+timer;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 340,
+        "wires": [
+            [
+                "56fbf075c6dfb7b5"
+            ]
+        ]
+    },
+    {
+        "id": "412173e9e1d9c33e",
+        "type": "ui_text",
+        "z": "e8cf5037a3361742",
+        "group": "248b41bdf86a5da2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mức thức ăn hiện tại",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 960,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "81776827aa09bf46",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "function 5",
+        "func": "// Lấy dữ liệu đã lưu trong context\nconst userInput = flow.get(\"userInput\");\n\nif (!userInput) {\n    // Nếu chưa có dữ liệu input, thông báo lỗi\n    return { payload: \"Không có dữ liệu để gửi!\" };\n}\nconst timer = userInput;\nmsg.payload = timer;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 380,
+        "wires": [
+            [
+                "412173e9e1d9c33e"
+            ]
+        ]
+    },
+    {
+        "id": "2a250969faf24135",
+        "type": "ui_button",
+        "z": "e8cf5037a3361742",
+        "name": "",
+        "group": "bbe550ae753765c0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Tắt tự động cho ăn",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.off}}",
+        "className": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 710,
+        "y": 440,
+        "wires": [
+            [
+                "5bd0379f909bc674",
+                "b3fb09642dcf4dda"
+            ]
+        ]
+    },
+    {
+        "id": "5bd0379f909bc674",
+        "type": "function",
+        "z": "e8cf5037a3361742",
+        "name": "function 6",
+        "func": "const color = 'green'\nif (msg.payload === \"OFF\") {\n    msg.auto = '';\n    msg.off = color;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "ffe7ba198ecc706e",
+                "2a250969faf24135"
+            ]
+        ]
+    },
+    {
+        "id": "b450bec5fcbc92de",
+        "type": "debug",
+        "z": "e8cf5037a3361742",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "df2ebb453e60c7b9",
+        "type": "debug",
+        "z": "e8cf5037a3361742",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 90,
+        "y": 100,
+        "wires": []
+    }
+]
