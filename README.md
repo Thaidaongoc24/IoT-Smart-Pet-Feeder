@@ -2,6 +2,7 @@
 
 ## 🐾 Mô tả dự án
 
+
 Hệ thống **IoT Smart Pet Feeder** giúp bạn tự động hóa việc cho thú cưng ăn, đảm bảo chúng được chăm sóc đúng giờ và đầy đủ. Sử dụng công nghệ IoT, hệ thống cho phép bạn quản lý lịch trình cho ăn, theo dõi hoạt động qua ứng dụng và điều khiển từ xa thông qua MQTT.
 
 ---
@@ -79,7 +80,7 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 
   #### Node-red dashboard:
 
-![image](https://github.com/user-attachments/assets/cc987c0b-f811-4ca5-b6e8-900c17cc34f0)
+![image](https://github.com/user-attachments/assets/540298f1-5b4e-401b-9ddb-39e3640384fb)
 
 ### **Cài đặt VPS của AWS để chạy Node-RED online:**
 - Có thể truy cập Node-RED qua internet tại địa chỉ: http://13.211.141.181/ (với username là: iothus ; password là: test) để cài đặt FLOW
