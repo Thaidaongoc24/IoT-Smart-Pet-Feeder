@@ -107,7 +107,7 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
   <img src="https://github.com/user-attachments/assets/42d2a9bb-51b6-4995-92da-717397ffee21" alt="in1" style="width:40%;"/>
   <img src="https://github.com/user-attachments/assets/ade77069-55f4-484f-87a9-965f3b8eed07" alt="in2" style="width:40%;"/>
 </div>
-
+Hai LED hồng ngoại 2 bên hông để nhận biết thức ăn trong khoang còn hay hết
  <img src="https://github.com/user-attachments/assets/e0885c8c-2cc7-4e56-830c-04ea8858911c" alt="Hình2" style="width:50%;"/>
 
 #### **Video minh họa**
