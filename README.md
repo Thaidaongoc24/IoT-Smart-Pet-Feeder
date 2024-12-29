@@ -84,13 +84,12 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 
 ### **Cài đặt VPS của AWS để chạy Node-RED online:**
 - Có thể truy cập Node-RED qua internet tại địa chỉ: http://13.211.141.181/ (với username là: iothus ; password là: test) để cài đặt FLOW
-- Truy cập Dashboard tại địa chỉ; http://13.211.141.181/ui để điều khiển Pet Feeder
+- Truy cập Dashboard tại địa chỉ: http://13.211.141.181/ui để điều khiển Pet Feeder
 ---
 ### **Thiết kế 3D vỏ sản phẩm và in 3D:**
   #### Sử dụng phần mềm Fusion360 để thiết kế và chỉnh sửa 3D vỏ nhựa máy chia thức ăn.
   <img src="https://github.com/user-attachments/assets/e2aadc0b-d4b1-48f4-824c-9c4572de8ecd" alt="Hình2" style="width:50%;"/>
-    
-(Mô hình 3D trên được tham khảo tại https://www.thingiverse.com/thing:4826741 và có chỉnh sửa lại cho phù hợp)
+  
   #### Sử dụng máy in 3D Adventurer 3 của Bộ môn Vật lý Vô tuyến tại phòng 216T1 để in sản phẩm:
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/user-attachments/assets/4722b124-6102-4569-b5bb-fdd0734ac458" alt="in1" style="width:30%;"/>
@@ -102,10 +101,24 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 
 ### Hình ảnh và video
 
-- **Hình ảnh:**
+####**Hình ảnh:**
 
-- **Video:**
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/42d2a9bb-51b6-4995-92da-717397ffee21" alt="in1" style="width:40%;"/>
+  <img src="https://github.com/user-attachments/assets/ade77069-55f4-484f-87a9-965f3b8eed07" alt="in2" style="width:40%;"/>
+</div>
 
+ <img src="https://github.com/user-attachments/assets/e0885c8c-2cc7-4e56-830c-04ea8858911c" alt="Hình2" style="width:50%;"/>
+
+#### **Video minh họa**
+
+  - Khi thực hiện thao tác **FEED**, động cơ bước sẽ quay và đẩy thức ăn rơi ra đúng như thiết kế.
+
+https://github.com/user-attachments/assets/feaa2fb4-077a-4e90-951a-47a378171afe
+
+https://github.com/user-attachments/assets/5a313223-d1bd-4bd8-b4c5-cf93267f7ea4
+
+https://github.com/user-attachments/assets/1c2c6d76-e61f-4aba-88f7-5c3c63dd4b51
 
 ### Kết quả đạt được
 
