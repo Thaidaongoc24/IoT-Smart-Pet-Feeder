@@ -15,7 +15,7 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 ## 🌟 Tính năng chính
 
 - **Tự động hóa:** Lên lịch và thực hiện việc cho ăn tự động theo giờ định sẵn.
-- **Điều khiển từ xa:** Quản lý qua Dashboard Node-RED **trên trực tiếp internet mà không phải localhost**.
+- **Điều khiển từ xa:** Quản lý qua Dashboard Node-RED ***trên trực tiếp internet mà không phải localhost***.
 - **Theo dõi:** Gửi thông báo và hiển thị trạng thái thiết bị, lượng thức ăn còn hay hết.
 - **Phát hiện chuyển động:** Xác định khi thú cưng đến gần thiết bị.
 - **Cảm biến hết thức ăn:** Gửi cảnh báo khi thức ăn trong thiết bị hết.
@@ -102,7 +102,17 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 ### Hình ảnh và video
 
 #### **Hình ảnh:**
+- Cung cấp một giao diện đơn giản để người dùng thao tác và kết nối với mạng WiFi. Giao diện thân thiện với người dùng, hỗ trợ các tính năng như:
+  - Tìm kiếm các mạng WiFi xung quanh.
+  - Nhập thông tin xác thực để kết nối.
+  - Hiển thị trạng thái kết nối hiện tại.
 
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/32db0bae-4f86-4f57-9ba1-abf94c88df1f" alt="Màn hình 1" style="width:49%;"/>
+  <img src="https://github.com/user-attachments/assets/89b8cfc1-976f-4979-b11f-878f6ad239ca" alt="Màn hình 2" style="width:49%;"/>
+</div>
+
+- Hình ảnh sản phẩm thực tế:
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/user-attachments/assets/42d2a9bb-51b6-4995-92da-717397ffee21" alt="in1" style="width:40%;"/>
   <img src="https://github.com/user-attachments/assets/ade77069-55f4-484f-87a9-965f3b8eed07" alt="in2" style="width:40%;"/>
@@ -116,14 +126,12 @@ Hai LED hồng ngoại 2 bên hông để nhận biết thức ăn trong khoang 
 
 https://github.com/user-attachments/assets/feaa2fb4-077a-4e90-951a-47a378171afe
 
-https://github.com/user-attachments/assets/5a313223-d1bd-4bd8-b4c5-cf93267f7ea4
 
-https://github.com/user-attachments/assets/1c2c6d76-e61f-4aba-88f7-5c3c63dd4b51
 
-### Kết quả đạt được
-
-- Sản phẩm cơ bản hoạt động ổn định với những tính năng hữu ích và vượt trội.
+https://github.com/user-attachments/assets/0f5a1474-e81e-408a-8cef-c536f94902f5
 
 ## 🔓 Hướng phát triển thêm:
-- Phát triển thêm Domain để có thể truy cập dễ dàng hơn thay vì phải nhập địa chỉ IP.
-- Thêm các tính năng bao mật vào Dashboard như đã làm được ở FLOW
+
+- **Tích hợp tên miền (Domain):** Để truy cập dễ dàng hơn thay vì nhập địa chỉ IP.
+- **Bảo mật:** Thêm các tính năng bảo mật cho Dashboard và giao tiếp MQTT.
+- **Thêm AI:** Tích hợp AI để theo dõi và phân tích hành vi thú cưng.
