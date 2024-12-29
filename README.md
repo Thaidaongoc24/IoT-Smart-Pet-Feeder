@@ -101,7 +101,7 @@ Việc chăm sóc thú cưng đòi hỏi sự kiên nhẫn và thời gian, đ�
 
 ### Hình ảnh và video
 
-####**Hình ảnh:**
+#### **Hình ảnh:**
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/user-attachments/assets/42d2a9bb-51b6-4995-92da-717397ffee21" alt="in1" style="width:40%;"/>
