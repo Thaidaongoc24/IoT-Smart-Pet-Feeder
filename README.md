@@ -122,5 +122,8 @@ https://github.com/user-attachments/assets/1c2c6d76-e61f-4aba-88f7-5c3c63dd4b51
 
 ### Kết quả đạt được
 
-- 
+- Sản phẩm cơ bản hoạt động ổn định với những tính năng hữu ích và vượt trội.
 
+## 🔓 Hướng phát triển thêm:
+- Phát triển thêm Domain để có thể truy cập dễ dàng hơn thay vì phải nhập địa chỉ IP.
+- Thêm các tính năng bao mật vào Dashboard như đã làm được ở FLOW
